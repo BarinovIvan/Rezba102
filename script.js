@@ -11,10 +11,9 @@ const callback = (event) => {
 		);
 		console.log("Matches");
 	} else {
-		if (document.querySelectorAll('.header__nav>*').length > 2){
+		if (document.querySelectorAll('.header__nav>*').length > 2) {
 			console.log("Deletim");
 			document.querySelector('.header__nav>*:last-child').remove();
-		console.log("Does not match");
 		}
 	}
 }
@@ -25,5 +24,6 @@ mediaQuery.addEventListener("change", callback);
 
 
 burger.addEventListener("click", () => {
-
+	burger.classList.toggle("active");
+	navBar.classList.toggle("active");
 })
