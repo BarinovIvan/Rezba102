@@ -1,0 +1,44 @@
+body{
+	font-family: Inter, sans-serif;
+	//overflow-x: hidden;
+}
+
+.container {
+	width: 89%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/* ======================================================================= */
+
+.ibg{
+	position: relative;
+}
+
+.ibg img{
+	position: absolute;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+/* ======================================================================= */
+
+.btn{
+	@include fw_fz_lh(400,16px,150%);
+	text-transform: uppercase;
+	background: black;
+	border-radius: 8px; 
+	padding: 8px 16px;
+	cursor: pointer;
+	color: $white;
+
+	&-wrapper{
+		p{
+			display: inline;
+		}
+		
+	}
+}

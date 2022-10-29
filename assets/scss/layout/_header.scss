@@ -1,0 +1,82 @@
+.header {
+
+	.container {
+		display: flex;
+		padding: 16px 0;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid black;
+	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__title {
+		@include fw_fz_lh(700, 32px, 39px);
+	}
+
+	&__nav {
+		&>*:not(:last-child) {
+			margin-right: 32px;
+		}	
+	}
+
+	a {
+		color: black;
+	}
+
+	img {
+		width: 10px;
+		margin-left: 10px;
+	}
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+
+	&__bar {
+		display: block;
+		width: 25px;
+		height: 3px;
+		margin: 5px auto;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		background-color: black;
+
+	}
+}
+
+
+/* =========MEDIA============================================================== */
+
+@media(max-width: 768px) {
+	.burger {
+		display: block;
+	}
+
+	.burger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	.burger.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.burger.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.container nav,
+	button {
+		position: fixed;
+		left: -100%;
+		top: 70px;
+		flex-direction: column;
+		transition: 0.3s;
+	}
+
+}
