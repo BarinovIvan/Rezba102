@@ -8,20 +8,15 @@
 		border-bottom: 1px solid black;
 	}
 
-	&__menu {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-
 	&__title {
 		@include fw_fz_lh(700, 32px, 39px);
+		width: 170px;
 	}
 
 	&__nav {
-		&>*:not(:last-child) {
+		>*:not(:last-child) {
 			margin-right: 32px;
-		}	
+		}
 	}
 
 	a {
@@ -70,13 +65,10 @@
 		transform: translateY(-8px) rotate(-45deg);
 	}
 
-	.container nav,
-	button {
-		position: fixed;
-		left: -100%;
-		top: 70px;
-		flex-direction: column;
-		transition: 0.3s;
+
+
+	button{
+		display: none;
 	}
 
 }

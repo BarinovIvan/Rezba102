@@ -220,15 +220,11 @@ body {
   justify-content: space-between;
   border-bottom: 1px solid black;
 }
-.header__menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .header__title {
   font-weight: 700;
   line-height: 39px;
   font-size: 32px;
+  width: 170px;
 }
 .header__nav > *:not(:last-child) {
   margin-right: 32px;
@@ -268,12 +264,7 @@ body {
   .burger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  .container nav,
-button {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    flex-direction: column;
-    transition: 0.3s;
+  button {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
