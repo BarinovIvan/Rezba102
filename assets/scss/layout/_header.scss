@@ -71,29 +71,31 @@
 		position: fixed;
 		flex-direction: column;
 		text-align: center;
-		padding: 20px 0;
-		width: 100%;
+		padding: 15px 0;
+		width: 89%;
 		left: -100%;
 		top: 70px;
 		transition: 0.3s;
 
-		&>*:not(:last-child) {
+		.nav__item{
 			margin: 0 0 30px;
 		}
 
-		& a:after {
+		.nav__item:after {
 			position: absolute;
 			background-color: black;
 			content: "";
 			height: 1px;
 			width: 100%;
-			top: 100%;
+			top: 200%;
 			left: 0;
 		}
 	}
 
 	.header__nav.active {
 		left: 0;
+		right: 0;
+		margin: 0 auto;
 	}
 
 	button {

@@ -7,7 +7,7 @@ const callback = (event) => {
 	if (event.matches) {
 		navBar.insertAdjacentHTML(
 			'beforeend',
-			'<a href="#">Связаться с нами</a>'
+			'<a href="#" class = "nav__item">Связаться с нами</a>'
 		);
 		console.log("Matches");
 	} else {
