@@ -6,6 +6,7 @@
 		align-items: center;
 		justify-content: space-between;
 		border-bottom: 1px solid black;
+		transition: border-bottom 0.1s ease;
 	}
 
 	&__title {
@@ -66,19 +67,25 @@
 		transform: translateY(-8px) rotate(-45deg);
 	}
 
+	.header .container.active{
+		border-bottom: 2px solid black;
+	}
+
 	.header__nav {
 		display: flex;
 		position: fixed;
 		flex-direction: column;
 		text-align: center;
-		padding: 15px 0;
 		width: 89%;
 		left: -100%;
 		top: 70px;
 		transition: 0.3s;
 
-		.nav__item{
-			margin: 0 0 30px;
+		.nav__item {
+			margin: 0;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
 		}
 
 		.nav__item:after {
@@ -87,7 +94,7 @@
 			content: "";
 			height: 1px;
 			width: 100%;
-			top: 200%;
+			top: 100%;
 			left: 0;
 		}
 	}
