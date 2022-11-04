@@ -16,12 +16,9 @@ body{
 }
 
 .ibg img{
-	position: absolute;
 	object-fit: cover;
 	height: 100%;
 	width: 100%;
-	left: 0;
-	top: 0;
 }
 
 /* ======================================================================= */
@@ -39,6 +36,14 @@ body{
 		p{
 			display: inline;
 		}
-		
+	}
+	
+	img {
+		width: 10px;
+		margin-left: 10px;
+	}
+
+	&-shown{
+		display: block;
 	}
 }
