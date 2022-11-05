@@ -52,14 +52,27 @@
 	.greeting__image4 img {
 		object-position: 50% 62%;
 	}
+
+	.greeting__image5{
+		display: none;
+
+		img{
+			min-width: 100px;
+		}
+	}
 }
 
 /* ======================================================================= */
 
-@media(max-width: 1024px) {
+@media(max-width: 1240px) {
 	.greeting {
 		.container {
-			justify-content: center;
+			justify-content: space space-between;
+			margin: 0 auto;
+		}
+
+		.greeting__image5{
+			display: block;
 		}
 	}
 }
@@ -72,13 +85,13 @@
 			flex-direction: column;
 			text-align: center;
 
-			&>*{
+			&>*:not(:last-child) {
 				margin-right: 0;
 			}
 		}
 
 		.ibg>img {
-			height: 45px;
+			height: 80px;
 			margin: 5px 0 0;
 		}
 
